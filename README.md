@@ -10,7 +10,7 @@
                                                       __*STAR WARS*__
                                                          THE PURGE
 
-                                    As guerras clonicas chegam aos momentos finais,o lider 
+                                    As guerras clonicas chegam aos seus ultimos dias,o lider 
                                     separatista e lorde sith Conde Dookan é executado pelo 
                                     cavaleiro jedi Anakin Skywalker após uma fracasada 
                                     tentativa de sequetro do chanceler Palpatine. Em meio ao
