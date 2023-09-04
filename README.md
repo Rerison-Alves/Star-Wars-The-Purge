@@ -21,9 +21,9 @@
                                     o lord sith responsavel por tramar a partir das sombras as
                                     guerras clonicas, enquanto isso do outro lado da galaxia em 
                                     Utapau o mestre jedi Obi-Wan Kenobi caça o general Grievous a 
-                                    mando da ordem jedi até o planeta de Utapau e em Mandalor a ex 
-                                    cavaleira jedi Ashoka Tano trabalha secretmente para ordem 
-                                    jedi com o objetivo livar o planeta das garras de Dath Maul.
+                                    mando da ordem jedi e em Mandalor a ex cavaleira jedi Ashoka 
+                                    Tano trabalha secretmente para ordem jedi com o objetivo livar 
+                                    o planeta das garras de Dath Maul.
 
                                     Perante uma galaxia megulhada no caos, a ordem jedi manda um
                                     grupo de cavaleiros atras de Assajj Ventress, uma ex cavaleira 
