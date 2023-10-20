@@ -26,7 +26,7 @@
                                     o planeta das garras de Darth Maul.
 
                                     Perante uma galáxia mergulhada no caos, um grupo de Cavaleiros
-                                    Jedis são enviados em busca de Asajj Ventress, uma ex aprendiz
+                                    Jedis é enviado em busca de Asajj Ventress, uma ex aprendiz
                                     do Conde Dookan.
                                         
                                     Tal missão leva o grupo a uma grande nave fortaleza separatista, 
