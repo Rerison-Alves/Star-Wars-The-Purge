@@ -1,41 +1,40 @@
 # _STAR WARS: THE PURGE_
   
 ## Proposta:
-  - Star Wars: The purge é um jogo rogue like de visão isometrica, no qual o jogador controla um cavaleiro/a jedi.
-  - o jogo será dividido em fases nas quais o jogador terar que passar por desafios enquanto infrenta inumeros inimigos mortais.
-  - a cada obstaculo superado a ligação do personagem com a força ficara maior permirtindo que novas habilidades sejam desbloqueadas.
-  - a cada habilidade desbloqueda novas maneiras de enfrentar inimigos e novas formas de avançar pelas alas da nave se abrem para o jogador.
+  - Star Wars: The Purge é um jogo rogue-like de visão isómetrica, na qual o jogador controla um cavaleiro/a jedi.
+  - O jogo será dividido em fases, nas quais o jogador terá que passar por desafios enquanto enfrenta inúmeros inimigos mortais.
+  - A cada obstáculo superado, a ligação do personagem com a força ficará maior, permitindo que novas habilidades sejam desbloqueadas.
+  - A cada habilidade desbloqueada, novas maneiras de enfrentar inimigos e novas formas de avançar pelas alas da nave surgem para o jogador.
 
 ## Enredo:
                                                       __*STAR WARS*__
                                                          THE PURGE
 
-                                    As guerras clonicas chegam aos seus ultimos dias,o lider 
-                                    separatista e lorde sith Conde Dookan é executado pelo 
-                                    cavaleiro jedi Anakin Skywalker após uma fracassada 
-                                    tentativa de sequestro do chanceler Palpatine. Em meio ao
-                                    caos gerado pela morte de Dookan seus antigos generais e 
+                                    As guerras clônicas chegam aos seus últimos dias. O líder 
+                                    separatista e Lorde Sith, Conde Dookan, é executado pelo 
+                                    Cavaleiro Jedi Anakin Skywalker após uma tentativa 
+                                    fracassada de sequestrar o chanceler Palpatine. Em meio ao
+                                    caos gerado por sua morte, seus antigos generais e 
                                     aliados fogem.
 
-                                    A ordem jedi, arquiteta um arriscado plano para capturar 
-                                    o lord sith responsavel por tramar a partir das sombras as
-                                    guerras clonicas, enquanto isso do outro lado da galaxia em 
-                                    Utapau o mestre jedi Obi-Wan Kenobi caça o general Grievous a 
-                                    mando da ordem jedi e em Mandalor a ex cavaleira jedi Ashoka 
-                                    Tano trabalha secretmente para ordem jedi com o objetivo de livrar 
-                                    o planeta das garras de Dath Maul.
+                                    Enquanto isso, a Ordem Jedi arquiteta um arriscado plano para 
+                                    capturar o Lorde Sith responsável por tramar nas sombras as
+                                    guerras clônicas. Já no outro lado da galáxia, no planeta 
+                                    Utapau, o Mestre Jedi Obi-Wan Kenobi fora enviado em uma caça
+                                    ao General Grevious, e no planeta Mandalor, a Ex Cavaleira Jedi  
+                                    Ahsoka Tano trabalha secretamente com o objetivo de libertar
+                                    o planeta das garras de Darth Maul.
 
-                                    Perante uma galaxia mergulhada no caos, a ordem jedi manda um
-                                    grupo de cavaleiros atras de Assajj Ventress, uma ex cavaleira 
-                                    jedi e a ex aprediz de Dookan. 
+                                    Perante uma galáxia mergulhada no caos, um grupo de Cavaleiros
+                                    Jedis são enviados em busca de Asajj Ventress, uma ex aprendiz
+                                    do Conde Dookan.
                                         
-                                    Tal missão leva o grupo jedi a grande nave fortaleza separatista, 
-                                    Lucrehulk,localizada logo a cima do planeta de Dathomir. 
+                                    Tal missão leva o grupo a uma grande nave fortaleza separatista, 
+                                    a Lucrehulk, localizada logo acima do planeta Dathomir. 
                                         
-                                    Ápos a uma ardua batalha o Star Destroyer jedi se choca contra o 
-                                    Lucrehulk e os jedis invadem a fortaleza separatista com a ajuda 
-                                    de suas forças clonicas.
+                                    Após uma árdua batalha, uma nave Star Destroyer aliada se choca
+                                    contra a Lucrehulk e começam a invadir a fortaleza separatista com  
+                                    a ajuda de suas forças clônicas.
 
                                     Uma caçada começa....... 
-                                    Uma nova era se inicia na galaxia.....
-                                        
+                                    Uma nova era se inicia na galáxia.....                                 
