@@ -420,8 +420,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 1
   m_ShadowVolumeIntensity: 0.282
   m_LocalBounds:
-    m_Center: {x: 0.8405, y: 0.025249988, z: 0}
-    m_Extent: {x: 0.73010004, y: 0.74595, z: 0}
+    m_Center: {x: 0.84665, y: 0.029799998, z: 0}
+    m_Extent: {x: 0.73255, y: 0.7427, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -15320,6 +15320,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidadeMovi: 5.5
   rb: {fileID: 2138091504}
+  animator: {fileID: 2138091508}
 --- !u!50 &2138091504
 Rigidbody2D:
   serializedVersion: 4
