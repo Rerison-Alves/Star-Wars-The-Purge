@@ -6,9 +6,9 @@ using UnityEngine;
 public class PlayerMoviment : MonoBehaviour
 {
     // Movimentação
-    public float velocidadeMovi = 5f;
+    public float speed = 5f, initialSpeed = 5f;
     public Rigidbody2D rb;
-    Vector2 movement;
+    public Vector2 movement;
 
     // Animação
     public SpriteRenderer sprite;
@@ -22,7 +22,6 @@ public class PlayerMoviment : MonoBehaviour
     public bool attackblock;
 
 
-
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
@@ -31,7 +30,6 @@ public class PlayerMoviment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
         // input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -52,7 +50,7 @@ public class PlayerMoviment : MonoBehaviour
     void FixedUpdate()
     {
         //movimentação
-        rb.MovePosition(rb.position + movement * velocidadeMovi * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
 
@@ -91,6 +89,7 @@ public class PlayerMoviment : MonoBehaviour
             if (attackblock) return;
             animator.SetTrigger("Attack");
             attackblock = true;
+            speed = 0;
             StartCoroutine(DelayAttacked());
         }
     }
@@ -99,5 +98,6 @@ public class PlayerMoviment : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         attackblock = false;
+        speed = initialSpeed;
     }
 }
