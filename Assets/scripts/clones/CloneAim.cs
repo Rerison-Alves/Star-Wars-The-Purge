@@ -20,12 +20,16 @@ public class CloneAim : MonoBehaviour
     public GameObject laserPrefab;
     public float laserBulletForce = 20f;
 
+    // Sonorizção
+    public AudioSource audiosource;
+
     private void Awake()
     {
         aimTransform = transform.Find("Aim");
         firePoint = aimTransform.Find("FirePoint");
         aimAnimator = aimTransform.Find("effect").GetComponent<Animator>();
         spriteArma = aimTransform.Find("arma_2").GetComponent<SpriteRenderer>();
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,6 +60,7 @@ public class CloneAim : MonoBehaviour
             GameObject laserBullet = Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rbLaser = laserBullet.GetComponent<Rigidbody2D>();
             rbLaser.AddForce(firePoint.up * laserBulletForce, ForceMode2D.Impulse);
+            audiosource.Play();
         }
     }
 

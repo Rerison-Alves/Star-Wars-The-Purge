@@ -22,11 +22,17 @@ public class PlayerMoviment : MonoBehaviour
     public float delay = 0.3f;
     public bool attackblock;
 
+    // Sonorizção
+    public AudioSource audiosourceSaber;
+    public AudioClip passos;
+    public AudioClip ataque;
+
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        animator=GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        audiosourceSaber = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -35,6 +41,7 @@ public class PlayerMoviment : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         moveDirection = new Vector2(movement.x, movement.y).normalized;
+        
 
         // Animator
         animator.SetFloat("Horizontal", movement.x);
@@ -91,6 +98,7 @@ public class PlayerMoviment : MonoBehaviour
             if (attackblock) return;
             animator.SetTrigger("Attack");
             attackblock = true;
+            audiosourceSaber.Play();
             speed = 0;
             StartCoroutine(DelayAttacked());
         }
