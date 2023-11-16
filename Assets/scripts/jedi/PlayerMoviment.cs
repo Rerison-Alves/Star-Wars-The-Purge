@@ -9,6 +9,7 @@ public class PlayerMoviment : MonoBehaviour
     public float speed = 5f, initialSpeed = 5f;
     public Rigidbody2D rb;
     public Vector2 movement;
+    public Vector2 moveDirection;
 
     // Animação
     public SpriteRenderer sprite;
@@ -33,6 +34,7 @@ public class PlayerMoviment : MonoBehaviour
         // input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        moveDirection = new Vector2(movement.x, movement.y).normalized;
 
         // Animator
         animator.SetFloat("Horizontal", movement.x);
@@ -50,7 +52,7 @@ public class PlayerMoviment : MonoBehaviour
     void FixedUpdate()
     {
         //movimentação
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveDirection * speed * Time.fixedDeltaTime);
     }
 
 
