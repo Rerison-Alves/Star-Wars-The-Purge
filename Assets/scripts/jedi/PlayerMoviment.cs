@@ -9,7 +9,6 @@ public class PlayerMoviment : MonoBehaviour
     public float speed = 5f, initialSpeed = 5f;
     public Rigidbody2D rb;
     public Vector2 movement;
-    public Vector2 moveDirection;
 
     // Animação
     public SpriteRenderer sprite;
@@ -22,17 +21,11 @@ public class PlayerMoviment : MonoBehaviour
     public float delay = 0.3f;
     public bool attackblock;
 
-    // Sonorizção
-    public AudioSource audiosourceSaber;
-    public AudioClip passos;
-    public AudioClip ataque;
-
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        audiosourceSaber = GetComponent<AudioSource>();
     }
     // Update is called once per frame
     void Update()
@@ -40,8 +33,6 @@ public class PlayerMoviment : MonoBehaviour
         // input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        moveDirection = new Vector2(movement.x, movement.y).normalized;
-        
 
         // Animator
         animator.SetFloat("Horizontal", movement.x);
@@ -50,16 +41,16 @@ public class PlayerMoviment : MonoBehaviour
         Flip(movement.x);
 
         SetIdle();
+        Attack();
         animator.SetFloat("IdleHorizontal", idleHorizontal);
         animator.SetFloat("IdleVertical", idleVertical);
 
-        Attack();
     }
 
     void FixedUpdate()
     {
         //movimentação
-        rb.MovePosition(rb.position + moveDirection * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
     }
 
 
@@ -94,11 +85,13 @@ public class PlayerMoviment : MonoBehaviour
     public void Attack()
     {
         if (Input.GetMouseButtonDown(0)) 
-        { 
+        {
+            Vector2 diferenca = getMouseDifference();
+            idleHorizontal = diferenca.x;
+            idleVertical = diferenca.y;
             if (attackblock) return;
             animator.SetTrigger("Attack");
             attackblock = true;
-            audiosourceSaber.Play();
             speed = 0;
             StartCoroutine(DelayAttacked());
         }
@@ -109,5 +102,21 @@ public class PlayerMoviment : MonoBehaviour
         yield return new WaitForSeconds(delay);
         attackblock = false;
         speed = initialSpeed;
+    }
+
+    private Vector2 getMouseDifference()
+    {
+        Vector3 posicaoObjeto = transform.position;
+
+        // Obter a posição do mouse em coordenadas de mundo
+        Vector3 posicaoMouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        // Calcular a diferença entre a posição do objeto e a posição do mouse
+        Vector2 diferenca = new Vector2(posicaoMouse.x - posicaoObjeto.x, posicaoMouse.y - posicaoObjeto.y).normalized;
+
+        diferenca.x = (float)Math.Round(diferenca.x);
+        diferenca.y = (float)Math.Round(diferenca.y);
+
+        return diferenca;
     }
 }

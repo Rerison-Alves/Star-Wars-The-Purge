@@ -19,6 +19,7 @@ public class CloneAim : MonoBehaviour
     private Transform firePoint;
     public GameObject laserPrefab;
     public float laserBulletForce = 20f;
+    private float delay = 0;
 
     // Sonorizção
     public AudioSource audiosource;
@@ -54,8 +55,10 @@ public class CloneAim : MonoBehaviour
 
     private void HandleShooting(Vector3 playerPosition)
     {
-        if (Input.GetMouseButtonDown(1))
+        delay += Time.deltaTime;
+        if (delay >2)
         {
+            delay = 0;
             aimAnimator.SetTrigger("Shoot");
             GameObject laserBullet = Instantiate(laserPrefab, firePoint.position, firePoint.rotation);
             Rigidbody2D rbLaser = laserBullet.GetComponent<Rigidbody2D>();
