@@ -10,7 +10,7 @@ public class CloneAim : MonoBehaviour
     //Mecânica de mirar
     private Transform aimTransform;
     private Animator aimAnimator;
-    private SpriteRenderer spriteArma;
+    public GameObject arma;
 
     //Area de detecção do player
     public DetectionController detectionArea;
@@ -18,7 +18,7 @@ public class CloneAim : MonoBehaviour
     //Mecânica de atirar
     private Transform firePoint;
     public GameObject laserPrefab;
-    public float laserBulletForce = 20f;
+    public float laserBulletForce = 12f;
     private float delay = 0;
 
     // Sonorizção
@@ -29,8 +29,6 @@ public class CloneAim : MonoBehaviour
         aimTransform = transform.Find("Aim");
         firePoint = aimTransform.Find("FirePoint");
         aimAnimator = aimTransform.Find("effect").GetComponent<Animator>();
-        spriteArma = aimTransform.Find("arma_2").GetComponent<SpriteRenderer>();
-        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -41,7 +39,10 @@ public class CloneAim : MonoBehaviour
             Vector3 playerPosition = detectionArea.detectedObjs[0].transform.position;
 
             HandleAim(playerPosition);
-            HandleShooting(playerPosition);
+
+            PlayerHealth playerHealth = detectionArea.detectedObjs[0].GetComponent<PlayerHealth>();
+            if (playerHealth.health>0)
+                HandleShooting(playerPosition);
         }
     }
 
@@ -71,11 +72,11 @@ public class CloneAim : MonoBehaviour
     {
         if(angle > 90 || angle < (-90))
         {
-            spriteArma.flipY = true;
+            arma.transform.localScale = new Vector3(1,-1,1);
         }
         else
         {
-            spriteArma.flipY = false;
+            arma.transform.localScale = new Vector3(1, 1, 1);
         }
     }
 }

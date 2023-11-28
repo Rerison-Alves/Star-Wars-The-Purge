@@ -3,8 +3,6 @@
 ## Proposta:
   - Star Wars: The Purge é um jogo rogue-like de visão isómetrica, na qual o jogador controla um cavaleiro/a jedi.
   - O jogo será dividido em fases, nas quais o jogador terá que passar por desafios enquanto enfrenta inúmeros inimigos mortais.
-  - A cada obstáculo superado, a ligação do personagem com a força ficará maior, permitindo que novas habilidades sejam desbloqueadas.
-  - A cada habilidade desbloqueada, novas maneiras de enfrentar inimigos e novas formas de avançar pelas alas da nave surgem para o jogador.
 
 ## Enredo:
                                                       __*STAR WARS*__

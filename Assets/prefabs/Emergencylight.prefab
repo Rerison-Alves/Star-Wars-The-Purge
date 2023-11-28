@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5961284877293877386}
   - component: {fileID: 6070497329600799919}
-  - component: {fileID: 794263675902633304}
+  - component: {fileID: 6047581349894656585}
   m_Layer: 0
   m_Name: Emergencylight
   m_TagString: Untagged
@@ -87,7 +87,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &794263675902633304
+--- !u!114 &6047581349894656585
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0631ee8e2ed4d4847baa3298c76df9b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 300
+  rotationSpeed: 150
 --- !u!1 &4997327662820274768
 GameObject:
   m_ObjectHideFlags: 0

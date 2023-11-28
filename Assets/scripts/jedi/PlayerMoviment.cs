@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Drawing;
 using UnityEngine;
 
 public class PlayerMoviment : MonoBehaviour
@@ -8,37 +9,51 @@ public class PlayerMoviment : MonoBehaviour
     // Movimentação
     public float speed = 5f, initialSpeed = 5f;
     public Rigidbody2D rb;
-    public Vector2 movement;
-    public Vector2 fixedMove;
+    
+    private Vector2 movement;
+    private Vector2 fixedMove;
+    private bool walking = false;
 
     // Animação
-    public SpriteRenderer sprite;
+    private SpriteRenderer sprite;
     public Animator animator;
-    public float idleHorizontal = 0;
-    public float idleVertical = 0;
+    private float idleHorizontal = 0;
+    private float idleVertical = 0;
     
 
     // Attack
-    public float delay = 0.3f;
+    public float delayAttack = 0.3f;
     public bool attackblock;
+    public GameObject hitBoxes;
+
+    // Dash
+    public AudioSource whoosh;
+    public float activeMoveSpeed;
+    public float dashspeed;
+    private float dashLenght = .3f, dashCooldown = 1f;
+    private float dashCounter;
+    private float dashCoolCounter;
 
     // Som
     public AudioSource sabreSwing;
+    public AudioSource walkingSound;
 
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        animator = GetComponent<Animator>();
-        sabreSwing = GetComponent<AudioSource>();
+        animator=GetComponent<Animator>();
 
+        activeMoveSpeed = speed;
     }
     // Update is called once per frame
     void Update()
     {
+        
         // input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
         fixedMove = new Vector2 (movement.x, movement.y).normalized;
+        rb.velocity = fixedMove * activeMoveSpeed;
 
         // Animator
         animator.SetFloat("Horizontal", movement.x);
@@ -47,16 +62,19 @@ public class PlayerMoviment : MonoBehaviour
         Flip(movement.x);
 
         SetIdle();
-        Attack();
         animator.SetFloat("IdleHorizontal", idleHorizontal);
         animator.SetFloat("IdleVertical", idleVertical);
 
+        Attack();
+        Dash();
+
+        setWalkingSound();
     }
 
     void FixedUpdate()
     {
         //movimentação
-        rb.MovePosition(rb.position + fixedMove * speed * Time.fixedDeltaTime);
+        //rb.MovePosition(rb.position + fixedMove * speed * Time.fixedDeltaTime);
     }
 
 
@@ -65,10 +83,12 @@ public class PlayerMoviment : MonoBehaviour
         if (horizontal>=0 && idleHorizontal>=0)
         {
             sprite.flipX = false;
+            hitBoxes.transform.localScale = new Vector3(1, 1, 1);
         }
         else
         {
             sprite.flipX= true;
+            hitBoxes.transform.localScale = new Vector3(-1, 1, 1);
         }
     }
 
@@ -100,15 +120,46 @@ public class PlayerMoviment : MonoBehaviour
             animator.SetTrigger("Attack");
             attackblock = true;
             speed = 0;
-            StartCoroutine(DelayAttacked());
+            activeMoveSpeed = 0;
+            StartCoroutine(DelayStop(delayAttack));
         }
     }
 
-    private IEnumerator DelayAttacked()
+    public IEnumerator DelayStop(float delay)
     {
         yield return new WaitForSeconds(delay);
         attackblock = false;
         speed = initialSpeed;
+        activeMoveSpeed = initialSpeed;
+    }
+
+    public void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && activeMoveSpeed!=0)
+        {
+            if (dashCoolCounter<=0 && dashCounter<=0)
+            {
+                activeMoveSpeed = dashspeed;
+                dashCounter = dashLenght;
+                whoosh.Play();
+            }
+        }
+
+        if(dashCounter>0)
+        {
+            dashCounter  -= Time.deltaTime;
+
+            if (dashCounter<=0)
+            {
+                activeMoveSpeed = speed;
+                dashCoolCounter = dashCooldown;
+            }
+        }
+
+        if (dashCoolCounter>0)
+        {
+            dashCoolCounter -= Time.deltaTime;
+        }
     }
 
     private Vector2 getMouseDifference()
@@ -125,5 +176,20 @@ public class PlayerMoviment : MonoBehaviour
         diferenca.y = (float)Math.Round(diferenca.y);
 
         return diferenca;
+    }
+
+    private void setWalkingSound()
+    {
+        if (!walking && movement.sqrMagnitude != 0 && speed != 0)
+        {
+            walking = true;
+            walkingSound.Play();
+        }
+
+        if (walking && movement.sqrMagnitude == 0)
+        {
+            walking = false;
+            walkingSound.Stop();
+        }
     }
 }

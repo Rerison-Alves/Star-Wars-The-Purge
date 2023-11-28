@@ -10,7 +10,7 @@ public class DetectionController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.tag == tagTargetDetection)
+        if (collision.gameObject.tag == tagTargetDetection)
         {
             detectedObjs.Add(collision);
         }
