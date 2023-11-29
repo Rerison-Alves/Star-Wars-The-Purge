@@ -19,20 +19,36 @@ public class MenuPause : MonoBehaviour
         {
             if (pauseMenu.gameObject.activeSelf)
             {
-                pauseMenu.gameObject.SetActive(false);
-                Time.timeScale = 1;
+                ContinueGame();
             }
             else
             {
-                pauseMenu.gameObject.SetActive(true);
-                Time.timeScale = 0;
+                PauseGame();
             }
         }
     }
 
-    public void Continue()
+    void PauseGame()
+    {
+        pauseMenu.gameObject.SetActive(true);
+        Time.timeScale = 0;
+        AudioListener.pause = true; // Pausa todos os sons do jogo
+    }
+
+    void ContinueGame()
     {
         pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1;
+        AudioListener.pause = false; // Continua todos os sons do jogo
+    }
+
+    public void Continue()
+    {
+        ContinueGame();
+    }
+    public void Sair()
+    {
+        Debug.Log("Sair do jogo");
+        Application.Quit();
     }
 }
