@@ -1042,7 +1042,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Sprite: {fileID: 181837165, guid: 3794d4b4ce5ce294580683f80c312d5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1127,7 +1127,9 @@ MonoBehaviour:
   - {fileID: 897386246, guid: ff6930ebb5dc27f458f1bca91bf4f1a0, type: 3}
   - {fileID: 891469743, guid: ff6930ebb5dc27f458f1bca91bf4f1a0, type: 3}
   - {fileID: -11117932, guid: ff6930ebb5dc27f458f1bca91bf4f1a0, type: 3}
+  delayDeath: 3
   damagePlayer: {fileID: 1171656752356405528}
+  menuMorte: {fileID: 0}
 --- !u!61 &6593850571511340172
 BoxCollider2D:
   m_ObjectHideFlags: 0

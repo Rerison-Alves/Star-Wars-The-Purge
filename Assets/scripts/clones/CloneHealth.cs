@@ -16,6 +16,8 @@ public class CloneHealth : MonoBehaviour
     private bool damageBlock = false;
     private float delayDamage = 0.5f;
 
+    public GameObject cardPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +45,7 @@ public class CloneHealth : MonoBehaviour
             if (health <= 0)
             {
                 Destroy(gameObject);
+                if(cardPrefab!=null) { DropCard(); }
             }
         }
         
@@ -53,6 +56,11 @@ public class CloneHealth : MonoBehaviour
         yield return new WaitForSeconds(delayDamage);
         Destroy(blood);
         damageBlock = false;
+    }
+
+    private void DropCard()
+    {
+        Instantiate(cardPrefab, transform.position, transform.rotation);
     }
 
 }

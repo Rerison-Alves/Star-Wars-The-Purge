@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,8 +15,11 @@ public class PlayerHealth : MonoBehaviour
     private PlayerMoviment playerMoviment;
 
     private float delayDamage = 0.3f;
+    public float delayDeath = 3f;
 
     public AudioSource damagePlayer;
+
+    public GameObject menuMorte;
 
     // Start is called before the first frame update
     void Start()
@@ -60,5 +64,12 @@ public class PlayerHealth : MonoBehaviour
         playerMoviment.activeMoveSpeed = 0;
         playerMoviment.attackblock = true;
         playerMoviment.animator.SetTrigger("Death");
+        StartCoroutine(DeathMenu());
+    }
+
+    public IEnumerator DeathMenu()
+    {
+        yield return new WaitForSeconds(delayDeath);
+        menuMorte.SetActive(true);
     }
 }
