@@ -888,8 +888,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: 0.004499994, y: -0.061349995, z: 0}
-    m_Extent: {x: 0.2521, y: 0.07205, z: 0}
+    m_Center: {x: 0.0012999922, y: -0.06175, z: 0}
+    m_Extent: {x: 0.25349998, y: 0.07175, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3842,8 +3842,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: -0.032299995, y: -0.0595, z: 0}
-    m_Extent: {x: 0.2823, y: 0.0646, z: 0}
+    m_Center: {x: -0.030549988, y: -0.05785, z: 0}
+    m_Extent: {x: 0.29355, y: 0.06815, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -3924,8 +3924,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: -0.00015000254, y: -0.061150003, z: 0}
-    m_Extent: {x: 0.20715001, y: 0.06605, z: 0}
+    m_Center: {x: -0.026300006, y: -0.056599997, z: 0}
+    m_Extent: {x: 0.1792, y: 0.0689, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9703,8 +9703,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: 0.031311996, y: -0.0534, z: 0}
-    m_Extent: {x: 0.217188, y: 0.066199996, z: 0}
+    m_Center: {x: -0.0229, y: -0.05255, z: 0}
+    m_Extent: {x: 0.2224, y: 0.06545, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -9846,8 +9846,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: -0.02740205, y: -0.06405, z: 0}
-    m_Extent: {x: 0.17549795, y: 0.06255, z: 0}
+    m_Center: {x: 0.0017499998, y: -0.0593, z: 0}
+    m_Extent: {x: 0.20815, y: 0.066, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -10463,8 +10463,8 @@ MonoBehaviour:
   m_ShadowVolumeIntensityEnabled: 0
   m_ShadowVolumeIntensity: 0.769
   m_LocalBounds:
-    m_Center: {x: -0.0067500025, y: -0.06045, z: 0}
-    m_Extent: {x: 0.26255, y: 0.06455, z: 0}
+    m_Center: {x: -0.032749996, y: -0.05895, z: 0}
+    m_Extent: {x: 0.29845, y: 0.061350003, z: 0}
   m_PointLightInnerAngle: 360
   m_PointLightOuterAngle: 360
   m_PointLightInnerRadius: 0
@@ -21292,9 +21292,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2151480160907781732, guid: f014e8fec41b06d4086d81c669533841, type: 3}
+      propertyPath: damage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201241397781272146, guid: f014e8fec41b06d4086d81c669533841, type: 3}
+      propertyPath: attackblock
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2201241397781272146, guid: f014e8fec41b06d4086d81c669533841, type: 3}
+      propertyPath: delayAttack
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3680684568657859008, guid: f014e8fec41b06d4086d81c669533841, type: 3}
       propertyPath: m_LightType
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4670110065468740711, guid: f014e8fec41b06d4086d81c669533841, type: 3}
+      propertyPath: damage
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5548446245635816189, guid: f014e8fec41b06d4086d81c669533841, type: 3}
       propertyPath: healhtBar
@@ -21311,6 +21327,10 @@ PrefabInstance:
     - target: {fileID: 6901643073413649638, guid: f014e8fec41b06d4086d81c669533841, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7280261743338099174, guid: f014e8fec41b06d4086d81c669533841, type: 3}
+      propertyPath: damage
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8893196617995207759, guid: f014e8fec41b06d4086d81c669533841, type: 3}
       propertyPath: m_LocalPosition.x
