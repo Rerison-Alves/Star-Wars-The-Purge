@@ -10,13 +10,14 @@ public class SaberCollisor : MonoBehaviour
 
     public GameObject bulletParryed;
     public float laserBulletForce = 12f;
+    public int damage;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
         {
             CloneHealth cloneHealth = collision.GetComponent<CloneHealth>();
-            cloneHealth.Damage(1);
+            cloneHealth.Damage(damage);
         }
 
         if (collision.gameObject.CompareTag("Projectile"))
