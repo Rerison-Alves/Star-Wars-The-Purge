@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4206948014657602345}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FirePoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5447286045526331950}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Aim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3092363554146586376}
   - component: {fileID: 5500281993247998651}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: borda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7664174603986725429}
   - component: {fileID: 7909402432091318877}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: arma_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4403738102436105562}
   - component: {fileID: 6153394481184522830}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handle_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -327,7 +327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3516343325583208891}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: HealthEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -360,7 +360,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6605949775738519160}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Handles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -395,7 +395,7 @@ GameObject:
   - component: {fileID: 4767915061715830808}
   - component: {fileID: 4377704121782634057}
   - component: {fileID: 7074410021305604510}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: areaDetection
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -476,7 +476,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1723349970067035333}
   - component: {fileID: 9098714711960815343}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6384674057620359855}
   - component: {fileID: 4790691322278167506}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: handle_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -645,7 +645,7 @@ GameObject:
   - component: {fileID: 2276338439377718209}
   - component: {fileID: 2157730181135974342}
   - component: {fileID: 4746925794737557282}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -740,7 +740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3140965141738297271}
   - component: {fileID: 1990502815867962352}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: blastersound
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +869,7 @@ GameObject:
   - component: {fileID: 3925751161769229650}
   - component: {fileID: 3708149998985435878}
   - component: {fileID: 7637744268608989682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: effect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -979,7 +979,7 @@ GameObject:
   - component: {fileID: 4429121605144036545}
   - component: {fileID: 2129686100950319830}
   - component: {fileID: 3242349040210334295}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clone
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -1139,6 +1139,7 @@ MonoBehaviour:
   healthBarObject: {fileID: 1703470059499580782}
   healthPercent: 0
   Blood: {fileID: 7926146317639908197, guid: e6a6aa4c66e2878419f5ec7e3ea6609b, type: 3}
+  cardPrefab: {fileID: 0}
 --- !u!61 &4429121605144036545
 BoxCollider2D:
   m_ObjectHideFlags: 0

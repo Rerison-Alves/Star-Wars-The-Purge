@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MenuMorte : MonoBehaviour
 {
-    public string cenaName;
+    public LevelLoader levelLoader;
     public void Reiniciar()
     {
-        SceneManager.LoadScene(cenaName);
+        levelLoader.LoadNewLevel(SceneManager.GetActiveScene().buildIndex);
     }
 }

@@ -602,6 +602,7 @@ MonoBehaviour:
   saberDeflect: {fileID: 5027165650700368311}
   bulletParryed: {fileID: 3371476365301844516, guid: 7a4ba48d7fd1e9246a1ed290fa44278c, type: 3}
   laserBulletForce: 12
+  damage: 0
 --- !u!1 &5754636963308066117
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,6 +705,7 @@ MonoBehaviour:
   saberDeflect: {fileID: 5027165650700368311}
   bulletParryed: {fileID: 3371476365301844516, guid: 7a4ba48d7fd1e9246a1ed290fa44278c, type: 3}
   laserBulletForce: 12
+  damage: 0
 --- !u!1 &5880206711154394627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1044,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 4
   m_Sprite: {fileID: 181837165, guid: 3794d4b4ce5ce294580683f80c312d5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1439,6 +1441,7 @@ MonoBehaviour:
   saberDeflect: {fileID: 5027165650700368311}
   bulletParryed: {fileID: 3371476365301844516, guid: 7a4ba48d7fd1e9246a1ed290fa44278c, type: 3}
   laserBulletForce: 12
+  damage: 0
 --- !u!1 &9216389960027025827
 GameObject:
   m_ObjectHideFlags: 0

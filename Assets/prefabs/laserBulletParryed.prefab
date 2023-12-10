@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6574667359708839826}
   - component: {fileID: 159019619041091686}
   - component: {fileID: 8431791345915391187}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: laserBulletParryed
   m_TagString: Untagged
   m_Icon: {fileID: 0}

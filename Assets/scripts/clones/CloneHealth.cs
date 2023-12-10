@@ -14,7 +14,7 @@ public class CloneHealth : MonoBehaviour
 
     public GameObject Blood;
     private bool damageBlock = false;
-    private float delayDamage = 0.5f;
+    private float delayDamage = 0.3f;
 
     public GameObject cardPrefab;
 

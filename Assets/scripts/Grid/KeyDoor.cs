@@ -17,6 +17,6 @@ public class KeyDoor : MonoBehaviour
 
     public void OpenDoor()
     {
-        animator.SetTrigger("Open");
+        animator.SetBool("Open", true);
     }
 }

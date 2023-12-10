@@ -13,6 +13,7 @@ public class PlayerMoviment : MonoBehaviour
     private Vector2 movement;
     private Vector2 fixedMove;
     private bool walking = false;
+    PlayerHealth health;
 
     // Animação
     private SpriteRenderer sprite;
@@ -41,14 +42,15 @@ public class PlayerMoviment : MonoBehaviour
     private void Start()
     {
         sprite = GetComponent<SpriteRenderer>();
-        animator=GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        health = gameObject.GetComponent<PlayerHealth>();
 
         activeMoveSpeed = speed;
     }
     // Update is called once per frame
     void Update()
     {
-        
+
         // input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -56,12 +58,13 @@ public class PlayerMoviment : MonoBehaviour
         rb.velocity = fixedMove * activeMoveSpeed;
 
         // Animator
+        
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Speed", movement.sqrMagnitude);
-        Flip(movement.x);
+        if(health.health>0)Flip(movement.x);
 
-        SetIdle();
+        if(!attackblock) SetIdle();
         animator.SetFloat("IdleHorizontal", idleHorizontal);
         animator.SetFloat("IdleVertical", idleVertical);
 
@@ -80,7 +83,7 @@ public class PlayerMoviment : MonoBehaviour
 
     public void Flip(float horizontal)
     {
-        if (horizontal>=0 && idleHorizontal>=0)
+        if ((horizontal>=0 && idleHorizontal>=0)||(idleHorizontal >= 0 && attackblock))
         {
             sprite.flipX = false;
             hitBoxes.transform.localScale = new Vector3(1, 1, 1);

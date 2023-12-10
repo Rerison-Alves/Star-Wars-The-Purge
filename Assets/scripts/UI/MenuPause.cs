@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class MenuPause : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public string nomeMenu;
-    public string cenaName;
+    public LevelLoader levelLoader;
 
     // Flag para verificar se o som estava ativo antes de pausar o jogo
     private bool isAudioEnabled = true;
@@ -65,12 +64,12 @@ public class MenuPause : MonoBehaviour
         // Reseta o AudioListener antes de ir para o menu
         ResetAudioListener();
 
-        SceneManager.LoadScene(nomeMenu);
+        levelLoader.LoadNewLevel(0);
     }
 
     public void Reiniciar()
     {
-        SceneManager.LoadScene(cenaName);
+        levelLoader.LoadNewLevel(SceneManager.GetActiveScene().buildIndex);
         ContinueGame();
     }
 

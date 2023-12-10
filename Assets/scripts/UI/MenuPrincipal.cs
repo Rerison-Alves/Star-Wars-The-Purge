@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuPrincipal : MonoBehaviour
 {
-    [SerializeField] public string NomeLevel;
+    public LevelLoader levelLoader;
     public void Jogar()
     {
-        SceneManager.LoadScene(NomeLevel);
+        levelLoader.LoadNextLevel();
 
     }
     public void AbrirOpcoes()
