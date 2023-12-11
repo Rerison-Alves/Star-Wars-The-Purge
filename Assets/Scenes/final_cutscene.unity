@@ -340,7 +340,7 @@ GameObject:
   - component: {fileID: 1586947927}
   - component: {fileID: 1586947928}
   m_Layer: 0
-  m_Name: star_wars_intro
+  m_Name: star_wars_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -369,7 +369,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1586947925}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 30594140b9c51984db0cd0dfb6794cc6, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: fededd80223bf6648af338c5a563c2e0, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 401943040}
@@ -378,7 +378,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: <noninit>
   m_RenderMode: 0
-  m_AspectRatio: 3
+  m_AspectRatio: 5
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586947925}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 344454bb4c0d3364180fd8a3ab76fadd, type: 3}
+  m_Script: {fileID: 11500000, guid: 06f08707ba6fc2b4ea0b206826c2e326, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   levelLoader: {fileID: 3434295997470134892}

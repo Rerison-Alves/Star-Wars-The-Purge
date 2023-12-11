@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/cena_main.unity
     guid: 94973466748ea944da38cf1aa7463ea4
+  - enabled: 1
+    path: Assets/Scenes/final_cutscene.unity
+    guid: 5fd80d081249f4f4cac7ebcd65f1d090
   m_configObjects: {}

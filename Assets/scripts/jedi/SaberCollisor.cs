@@ -20,6 +20,12 @@ public class SaberCollisor : MonoBehaviour
             cloneHealth.Damage(damage);
         }
 
+        if (collision.gameObject.CompareTag("Reactor"))
+        {
+            ReactorHealth reactorHealth = collision.GetComponent<ReactorHealth>();
+            reactorHealth.Damage(damage);
+        }
+
         if (collision.gameObject.CompareTag("Projectile"))
         {
             saberDeflect.Play();

@@ -6,6 +6,8 @@ public class KeyHolder : MonoBehaviour
 {
     public List<Key.KeyType> keyList;
 
+    public AudioSource keyPickupSound;
+
     private void Awake()
     {
         keyList = new List<Key.KeyType>();
@@ -33,6 +35,7 @@ public class KeyHolder : MonoBehaviour
         {
             AddKey(key.GetKeyType());
             Destroy(key.gameObject);
+            keyPickupSound.Play();
         }
 
         KeyDoor keyDoor = collision.GetComponent<KeyDoor>();

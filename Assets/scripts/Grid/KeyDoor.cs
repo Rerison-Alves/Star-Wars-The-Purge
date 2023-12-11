@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeyDoor : MonoBehaviour
 {
     Animator animator;
+    public AudioSource audioEffect;
+
     [SerializeField] private Key.KeyType keyType;
 
     public void Start()
@@ -18,5 +20,6 @@ public class KeyDoor : MonoBehaviour
     public void OpenDoor()
     {
         animator.SetBool("Open", true);
+        audioEffect.Play();
     }
 }
