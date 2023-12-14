@@ -42,15 +42,15 @@
 
 ## Comandos:
   - Movimentação:
-    W - Andar pra frente
-    A - Andar pra esquerda
-    S - Andar pra trás
-    D - Andar pra direita
+    - W: Andar pra frente
+    - A: Andar pra esquerda
+    - S: Andar pra trás
+    - D: Andar pra direita
 
   - Combate:
-    Botão direito do mouse: Golpe com o sabre de luz aonde está direcionado o personagem
-    "Reflexão de tiro": Você deve dar um golpe pouco antes do tiro lhe atingir, refletindo contra o inimigo
-    Botão de espaço: Você ira dar um pequeno dash, facilitando para desviar
+    - Botão direito do mouse: Golpe com o sabre de luz aonde está direcionado o personagem
+    - Botão de espaço: Você ira dar um pequeno dash, facilitando para desviar
+    - "Reflexão de tiro": Você deve dar um golpe pouco antes do tiro lhe atingir, refletindo contra o inimigo.
 
 ## Combate
   Durante o jogo, você irá encontrar pelo mapa vários inimigos, os temidos Stormtroopers.
