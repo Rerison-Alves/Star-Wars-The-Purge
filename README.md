@@ -48,7 +48,7 @@
     - D: Andar pra direita
 
   - Combate:
-    - Botão direito do mouse: Golpe com o sabre de luz aonde está direcionado o personagem
+    - Botão esquerdo do mouse: Golpe com o sabre de luz aonde está direcionado o personagem
     - Botão de espaço: Você ira dar um pequeno dash, facilitando para desviar
     - "Reflexão de tiro": Você deve dar um golpe pouco antes do tiro lhe atingir, refletindo contra o inimigo.
 
@@ -59,4 +59,4 @@
   - Para evitar dano, você pode desviar do tiro, andando em uma direção diferente do tiro; dar um dash para auxiliar neste objetivo, ou ainda realizar um golpe pouco antes do tiro lhe atingir, para refletir o tiro.
 
 ## Instalação
-  Você deverá realizar o download do jogo, extraí-lo do arquivo zippado em uma pasta de sua preferência no seu computador, e após isso, abrir o executável.
+  Você deverá ir na aba de releases, realizar o download do jogo, extraí-lo do arquivo zippado em uma pasta de sua preferência no seu computador, e após isso, abrir o executável.
