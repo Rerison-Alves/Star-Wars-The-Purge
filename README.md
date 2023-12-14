@@ -1,7 +1,7 @@
 # _STAR WARS: THE PURGE_
   
 ## Proposta:
-  - Star Wars: The Purge é um jogo rogue-like de visão isómetrica, na qual o jogador controla um cavaleiro/a jedi.
+  - Star Wars: The Purge é um jogo dungeon-crawler de visão isómetrica, na qual o jogador controla um cavaleiro jedi.
   - O jogo será dividido em fases, nas quais o jogador terá que passar por desafios enquanto enfrenta inúmeros inimigos mortais.
 
 ## Enredo:
@@ -35,4 +35,27 @@
                                     a ajuda de suas forças clônicas.
 
                                     Uma caçada começa....... 
-                                    Uma nova era se inicia na galáxia.....                                 
+                                    Uma nova era se inicia na galáxia..... 
+
+## Objetivo
+  Seu objetivo é percorrer pela nave na qual você está preso, enfrentar inimigos mortais, destruir os reatores e fugir num pod de escapatória, assim, sobrevivendo a Ordem 66 e atrapalhando com os planos dos Sith.
+
+## Comandos:
+  - Movimentação: 
+    W - Andar pra frente
+    A - Andar pra esquerda
+    S - Andar pra trás
+    D - Andar pra direita
+
+  - Combate:
+    Botão direito do mouse: Golpe com o sabre de luz aonde está direcionado o personagem
+    "Reflexão de tiro": Você deve dar um golpe pouco antes do tiro lhe atingir, refletindo contra o inimigo
+    Botão de espaço: Você ira dar um pequeno dash, facilitando para desviar
+
+## Combate
+  Durante o jogo, você irá encontrar pelo mapa vários inimigos, os temidos Stormtroopers.
+  Para combatê-los, você deverá chegar perto deles e atingi-los com um golpe do seu Sabre da Luz. Mas tome cuidado, todos são equipados com blasters que atiram projéteis de lasers perigosos que pode lhe machucar.
+  Para evitar dano, você pode desviar do tiro, andando em uma direção diferente do tiro; dar um dash para auxiliar neste objetivo, ou ainda realizar um golpe pouco antes do tiro lhe atingir, para refletir o tiro.
+
+## Instalação
+  Você deverá realizar o download do jogo, extraí-lo do arquivo zippado em uma pasta de sua preferência no seu computador, e após isso, abrir o executável.
