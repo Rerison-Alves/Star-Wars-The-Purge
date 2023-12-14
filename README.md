@@ -53,9 +53,10 @@
     - "Reflexão de tiro": Você deve dar um golpe pouco antes do tiro lhe atingir, refletindo contra o inimigo.
 
 ## Combate
-  Durante o jogo, você irá encontrar pelo mapa vários inimigos, os temidos Stormtroopers.
-  Para combatê-los, você deverá chegar perto deles e atingi-los com um golpe do seu Sabre da Luz. Mas tome cuidado, todos são equipados com blasters que atiram projéteis de lasers perigosos que pode lhe machucar.
-  Para evitar dano, você pode desviar do tiro, andando em uma direção diferente do tiro; dar um dash para auxiliar neste objetivo, ou ainda realizar um golpe pouco antes do tiro lhe atingir, para refletir o tiro.
+
+  - Durante o jogo, você irá encontrar pelo mapa vários inimigos, os temidos Stormtroopers.
+  - Para combatê-los, você deverá chegar perto deles e atingi-los com um golpe do seu Sabre da Luz. Mas tome cuidado, todos são equipados com blasters que atiram projéteis de lasers perigosos que pode lhe machucar.
+  - Para evitar dano, você pode desviar do tiro, andando em uma direção diferente do tiro; dar um dash para auxiliar neste objetivo, ou ainda realizar um golpe pouco antes do tiro lhe atingir, para refletir o tiro.
 
 ## Instalação
   Você deverá realizar o download do jogo, extraí-lo do arquivo zippado em uma pasta de sua preferência no seu computador, e após isso, abrir o executável.
