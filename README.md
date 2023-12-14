@@ -41,7 +41,7 @@
   Seu objetivo é percorrer pela nave na qual você está preso, enfrentar inimigos mortais, destruir os reatores e fugir num pod de escapatória, assim, sobrevivendo a Ordem 66 e atrapalhando com os planos dos Sith.
 
 ## Comandos:
-  - Movimentação: 
+  - Movimentação:
     W - Andar pra frente
     A - Andar pra esquerda
     S - Andar pra trás
